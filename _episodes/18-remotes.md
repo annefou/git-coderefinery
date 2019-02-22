@@ -72,7 +72,7 @@ This is a representation of what happens when you clone:
 
 *remote*: ![]({{ site.baseurl }}/fig/01-remote.svg)
 
-*local*: ![]({{ site.baseurl }}/fig01-local.svg)
+*local*: ![]({{ site.baseurl }}/fig/01-local.svg)
 
 - We clone the entire history, all branches, all commits.
 - `git clone` creates pointers `origin/master` and `origin/experiment`.
