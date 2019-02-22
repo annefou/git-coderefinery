@@ -67,15 +67,15 @@ self-contained cherry-pickable commit.
 
 In other words instead of this history:
 
-![]({{ site.baseurl }}/img/rebase-exercise-1.svg)
+![]({{ site.baseurl }}/fig/rebase-exercise-1.svg)
 
 We wish to first rebase the commits:
 
-![]({{ site.baseurl }}/img/rebase-exercise-2.svg)
+![]({{ site.baseurl }}/fig/rebase-exercise-2.svg)
 
 And in a second step squash the commits into one:
 
-![]({{ site.baseurl }}/img/rebase-exercise-3.svg)
+![]({{ site.baseurl }}/fig/rebase-exercise-3.svg)
 
 Verify the steps and the result with `git status` and `git log`.
 Verify the history and also that the script still works after the operation.

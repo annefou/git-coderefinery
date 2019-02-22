@@ -24,7 +24,7 @@ keypoints:
 
 ## Distributed version control
 
-![The GitHub Octocat]({{ site.baseurl }}/img/forking/github_octocat.jpeg)
+![The GitHub Octocat]({{ site.baseurl }}/fig/github_octocat.jpeg)
 
 
 Git implements a distributed version control.
@@ -35,7 +35,7 @@ Two topologies are very frequent: centralized and forking layout.
 
 ### Centralized layout
 
-![]({{ site.baseurl }}/img/forking/centralized.svg)
+![]({{ site.baseurl }}/fig/centralized.svg)
 
 In Git all repositories are in principle equivalent but typically we consider one repository
 as the main development line and this is marked as "central".
@@ -61,7 +61,7 @@ Disadvantages:
 
 ### Forking layout
 
-![]({{ site.baseurl }}/img/forking/forking-overview.svg)
+![]({{ site.baseurl }}/fig/forking-overview.svg)
 
 Again we call one repository the "central" repository.
 
@@ -132,13 +132,13 @@ on GitHub into your namespace and then clone the fork to your computer.
 
 Here is a pictorial representation of this part:
 
-![]({{ site.baseurl }}/img/forking/forking-1.svg)
+![]({{ site.baseurl }}/fig/forking-1.svg)
 
 This is how it looks after we fork:
 
-*central*: ![]({{ site.baseurl }}/img/forking/github-remote-01.svg)
+*central*: ![]({{ site.baseurl }}/fig/github-remote-01.svg)
 
-*fork*: ![]({{ site.baseurl }}/img/forking/github-remote-01.svg)
+*fork*: ![]({{ site.baseurl }}/fig/github-remote-01.svg)
 
 - A fork is basically a (bare) clone.
 - The upstream repo and the fork are in principle independent repositories.
@@ -146,11 +146,11 @@ This is how it looks after we fork:
 
 After we clone the fork we have three in principle independent repositories:
 
-*central*: ![]({{ site.baseurl }}/img/forking/github-remote-01.svg)
+*central*: ![]({{ site.baseurl }}/fig/github-remote-01.svg)
 
-*fork*: ![]({{ site.baseurl }}/img/forking/github-remote-01.svg)
+*fork*: ![]({{ site.baseurl }}/fig/github-remote-01.svg)
 
-*local*: ![]({{ site.baseurl }}/img/forking/github-local-01.svg)
+*local*: ![]({{ site.baseurl }}/fig/github-local-01.svg)
 
 
 ### Part B: Modify and commit
@@ -181,11 +181,11 @@ group 17 says: please replace this boring sentence with something more fun
 
 If it works, commit the change. And here is a picture of what just happened:
 
-*central*: ![]({{ site.baseurl }}/img/forking/github-remote-01.svg)
+*central*: ![]({{ site.baseurl }}/fig/github-remote-01.svg)
 
-*fork*: ![]({{ site.baseurl }}/img/forking/github-remote-01.svg)
+*fork*: ![]({{ site.baseurl }}/fig/github-remote-01.svg)
 
-*local*: ![]({{ site.baseurl }}/img/forking/github-local-02.svg)
+*local*: ![]({{ site.baseurl }}/fig/github-local-02.svg)
 
 
 ### Part C: Push your changes to the fork
@@ -200,11 +200,11 @@ GitHub (but you can delete them later).
 $ git push origin feature
 ```
 
-*central*: ![]({{ site.baseurl }}/img/forking/github-remote-01.svg)
+*central*: ![]({{ site.baseurl }}/fig/github-remote-01.svg)
 
-*fork*: ![]({{ site.baseurl }}/img/forking/github-remote-02.svg)
+*fork*: ![]({{ site.baseurl }}/fig/github-remote-02.svg)
 
-*local*: ![]({{ site.baseurl }}/img/forking/github-local-03.svg)
+*local*: ![]({{ site.baseurl }}/fig/github-local-03.svg)
 
 
 ### Part D: File a pull request
@@ -213,17 +213,17 @@ Then file a pull request from the branch on your fork towards the master branch 
 
 Here is a pictorial representation for parts C and D:
 
-![]({{ site.baseurl }}/img/forking/forking-2.svg)
+![]({{ site.baseurl }}/fig/forking-2.svg)
 
 A pull-request means: "please review my changes and if you agree, merge them with a mouse-click".
 
 Once the pull-request is accepted, the change is merged:
 
-*central*: ![]({{ site.baseurl }}/img/forking/github-remote-03.svg)
+*central*: ![]({{ site.baseurl }}/fig/github-remote-03.svg)
 
-*fork*: ![]({{ site.baseurl }}/img/forking/github-remote-02.svg)
+*fork*: ![]({{ site.baseurl }}/fig/github-remote-02.svg)
 
-*local*: ![]({{ site.baseurl }}/img/forking/github-local-03.svg)
+*local*: ![]({{ site.baseurl }}/fig/github-local-03.svg)
 
 Wait here until we integrate all pull requests into the central repo
 together on the big screen.
@@ -245,7 +245,7 @@ but really also end up in your fork.
 
 Here is a pictorial representation of this part:
 
-![]({{ site.baseurl }}/img/forking/forking-3.svg)
+![]({{ site.baseurl }}/fig/forking-3.svg)
 
 We will discuss two solutions:
 
@@ -259,32 +259,32 @@ $ git remote add upstream https://github.com/coderefinery/forking-workflow-exerc
 $ git fetch upstream
 ```
 
-*central*: ![]({{ site.baseurl }}/img/forking/github-remote-03.svg)
+*central*: ![]({{ site.baseurl }}/fig/github-remote-03.svg)
 
-*fork*: ![]({{ site.baseurl }}/img/forking/github-remote-02.svg)
+*fork*: ![]({{ site.baseurl }}/fig/github-remote-02.svg)
 
-*local*: ![]({{ site.baseurl }}/img/forking/github-local-04.svg)
+*local*: ![]({{ site.baseurl }}/fig/github-local-04.svg)
 
 ```shell
 $ git checkout master
 $ git merge upstream/master
 ```
 
-*central*: ![]({{ site.baseurl }}/img/forking/github-remote-03.svg)
+*central*: ![]({{ site.baseurl }}/fig/github-remote-03.svg)
 
-*fork*: ![]({{ site.baseurl }}/img/forking/github-remote-02.svg)
+*fork*: ![]({{ site.baseurl }}/fig/github-remote-02.svg)
 
-*local*: ![]({{ site.baseurl }}/img/forking/github-local-05.svg)
+*local*: ![]({{ site.baseurl }}/fig/github-local-05.svg)
 
 ```shell
 $ git push origin master
 ```
 
-*central*: ![]({{ site.baseurl }}/img/forking/github-remote-03.svg)
+*central*: ![]({{ site.baseurl }}/fig/github-remote-03.svg)
 
-*fork*: ![]({{ site.baseurl }}/img/forking/github-remote-04.svg)
+*fork*: ![]({{ site.baseurl }}/fig/github-remote-04.svg)
 
-*local*: ![]({{ site.baseurl }}/img/forking/github-local-06.svg)
+*local*: ![]({{ site.baseurl }}/fig/github-local-06.svg)
 
 
 #### Shorter route
@@ -324,7 +324,7 @@ origin	https://github.com/user/project.git (push)
 <br>
 <br>
 <br>
-![]({{ site.baseurl }}/img/forking/remote.jpg)
+![]({{ site.baseurl }}/fig/remote.jpg)
 ## Luke Skywalker: *You know, I did feel something. I could almost see the remote.*
 
 ## Ben Kenobi: *That's good. You've taken your first step into a larger world.*

@@ -47,7 +47,7 @@ $ git commit
 
 - We first focus (`git add`, we "stage" the change), then shoot (`git commit`):
 
-![Git staging]({{ site.baseurl }}/img/git_stage_commit.svg
+![Git staging]({{ site.baseurl }}/fig/git_stage_commit.svg
 "git staging and committing"){:class="img-responsive" style="max-width:70%"}
 
 - For the more advanced users: What do you think will be the outcome if you stage a file and then edit it and stage it again, do this
@@ -335,7 +335,7 @@ then paragraph(s) with more details in free form, if necessary**.
 $ git difftool
 ```
 
-![Git events]({{ site.baseurl }}/img/meld.png
+![Git events]({{ site.baseurl }}/fig/meld.png
 "git difftool meld"){:class="img-responsive" style="max-width:70%"}
 
 ---

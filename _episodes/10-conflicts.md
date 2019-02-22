@@ -14,7 +14,7 @@ keypoints:
 
 ## Conflict resolution
 
-![]({{ site.baseurl }}/img/conflict-resolution/mk1.jpg)
+![]({{ site.baseurl }}/fig/mk1.jpg)
 
 In most cases a `git merge` runs smooth and automatic.
 Then a merge commit appears (unless fast-forward) without you even noticing.
@@ -257,7 +257,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 $ git mergetool
 ```
 
-![]({{ site.baseurl }}/img/conflict-resolution/mergetool.png)
+![]({{ site.baseurl }}/fig/mergetool.png)
 
 - Your current branch is left, the branch you merge is right, result is in the middle.
 - After you are done, close and commit, `git add` is not needed when using `git mergetool`.
@@ -288,7 +288,7 @@ $ git config --global mergetool.keepBackup false
 
 ## Using "ours" or "theirs" strategy
 
-![]({{ site.baseurl }}/img/conflict-resolution/mk2.jpg)
+![]({{ site.baseurl }}/fig/mk2.jpg)
 
 - Sometimes you know that you want to keep "ours" version (version on this branch)
   or "theirs" (version on the merged branch).

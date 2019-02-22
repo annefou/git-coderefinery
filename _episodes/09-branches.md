@@ -23,7 +23,7 @@ In the previous section we tracked a guacamole recipe with Git.
 Up until now our repository had only one branch with one commit coming
 after the other:
 
-![Linear]({{ site.baseurl }}/img/gitink/git-branch-1.svg "Linear git
+![Linear]({{ site.baseurl }}/fig/git-branch-1.svg "Linear git
 repository"){:class="img-responsive"}
 
 - Commits are depicted as little boxes with abbreviated hashes.
@@ -43,7 +43,7 @@ different tracks of work**. Researchers can work on different things and merge
 the changes they made to the source code files afterwards to create a composite
 version that contains both the changes:
 
-![Git collaborative]({{ site.baseurl }}/img/gitink/git-collaborative.svg
+![Git collaborative]({{ site.baseurl }}/fig/git-collaborative.svg
 "description"){:class="img-responsive"}
 
 - We see branching points and merging points.
@@ -65,7 +65,7 @@ Before we exercise branching, a quick recap of what we got so far.
 We have three commits (we use the first two characters of the commits) and only
 one development line (branch) and this branch is called "master":
 
-![]({{ site.baseurl }}/img/gitink/git-branch-1.svg)
+![]({{ site.baseurl }}/fig/git-branch-1.svg)
 
 We have defined the `git graph` alias earlier using
 (if `git graph` doesn't work for you, run this line to define it):
@@ -216,7 +216,7 @@ $ git graph
 
 Here is a graphical representation of what we have created:
 
-![]({{ site.baseurl }}/img/gitink/git-branch-2.svg)
+![]({{ site.baseurl }}/fig/git-branch-2.svg)
 
 - Now switch to `master`.
 - Add and commit the following `README.md` to `master`:
@@ -243,7 +243,7 @@ $ git graph
 * 2d79e7e adding ingredients and instructions
 ```
 
-![]({{ site.baseurl }}/img/gitink/git-branch-3.svg)
+![]({{ site.baseurl }}/fig/git-branch-3.svg)
 
 And for comparison this is how it looks [on GitHub](https://github.com/bast/recipe/network).
 
@@ -280,7 +280,7 @@ Then we merge `experiment` into `master`:
 $ git merge experiment
 ```
 
-![]({{ site.baseurl }}/img/gitink/git-merge-1.svg)
+![]({{ site.baseurl }}/fig/git-merge-1.svg)
 
 We can verify the result in the terminal:
 
@@ -322,7 +322,7 @@ $ git branch  # make sure you are on master
 $ git merge less-salt
 ```
 
-![]({{ site.baseurl }}/img/gitink/git-merge-2.svg)
+![]({{ site.baseurl }}/fig/git-merge-2.svg)
 
 We can verify the result in the terminal:
 
@@ -386,7 +386,7 @@ Deleted branch less-salt (was bf59be6).
 
 This is the result:
 
-![]({{ site.baseurl }}/img/gitink/git-deleted-branches.svg)
+![]({{ site.baseurl }}/fig/git-deleted-branches.svg)
 
 Compare in the terminal:
 
@@ -421,7 +421,7 @@ may have a hard time finding them as there is no branch pointing to them.
 - Create a new branch from `master` and switch to it.
 - Create a couple of commits on the new branch (for instance edit `README.md`):
 
-![]({{ site.baseurl }}/img/gitink/git-pre-ff.svg)
+![]({{ site.baseurl }}/fig/git-pre-ff.svg)
 
 - Now switch to `master`.
 - Merge the new branch to `master`.

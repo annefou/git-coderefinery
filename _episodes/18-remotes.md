@@ -70,9 +70,9 @@ If you decide to set up ssh keys later:
 
 This is a representation of what happens when you clone:
 
-*remote*: ![]({{ site.baseurl }}/img/centralized/01-remote.svg)
+*remote*: ![]({{ site.baseurl }}/fig/01-remote.svg)
 
-*local*: ![]({{ site.baseurl }}/img/centralized/01-local.svg)
+*local*: ![]({{ site.baseurl }}/fig01-local.svg)
 
 - We clone the entire history, all branches, all commits.
 - `git clone` creates pointers `origin/master` and `origin/experiment`.
@@ -103,9 +103,9 @@ $ git add yourusername.txt
 $ git commit
 ```
 
-*remote*: ![]({{ site.baseurl }}/img/centralized/01-remote.svg)
+*remote*: ![]({{ site.baseurl }}/fig/01-remote.svg)
 
-*local*: ![]({{ site.baseurl }}/img/centralized/04-local.svg)
+*local*: ![]({{ site.baseurl }}/fig/04-local.svg)
 
 
 ### 5. Try to push the change to the upstream repository
@@ -135,9 +135,9 @@ Merge the remote changes (e.g. 'git pull') before pushing again.  See the
 
 It will work only for one participant. Why?
 
-*remote*: ![]({{ site.baseurl }}/img/centralized/06-remote.svg)
+*remote*: ![]({{ site.baseurl }}/fig/06-remote.svg)
 
-*local*: ![]({{ site.baseurl }}/img/centralized/04-local.svg)
+*local*: ![]({{ site.baseurl }}/fig/04-local.svg)
 
 The natural reflex is now to `git pull` first but
 what happens if we `git pull origin master`?
@@ -149,9 +149,9 @@ what happens if we `git pull origin master`?
 $ git pull origin master
 ```
 
-*remote*: ![]({{ site.baseurl }}/img/centralized/06-remote.svg)
+*remote*: ![]({{ site.baseurl }}/fig/06-remote.svg)
 
-*local*: ![]({{ site.baseurl }}/img/centralized/07-local.svg)
+*local*: ![]({{ site.baseurl }}/fig/07-local.svg)
 
 
 ### 8. **Stop here** and discuss why we obtained a merge commit locally
@@ -186,9 +186,9 @@ $ git pull --rebase origin master
 
 would have produced:
 
-*remote*: ![]({{ site.baseurl }}/img/centralized/06-remote.svg)
+*remote*: ![]({{ site.baseurl }}/fig/06-remote.svg)
 
-*local*: ![]({{ site.baseurl }}/img/centralized/08-local.svg)
+*local*: ![]({{ site.baseurl }}/fig/08-local.svg)
 
 
 ### 9. Try to push again

@@ -111,7 +111,7 @@ committed (paid for).
 
 We have a variety of commands to go between states:
 
-![]({{ site.baseurl }}/img/file_states.png)
+![]({{ site.baseurl }}/fig/file_states.png)
 
 ```shell
 $ git add <path>       # stages all changes in file

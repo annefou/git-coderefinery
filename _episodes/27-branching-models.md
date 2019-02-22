@@ -12,7 +12,7 @@ objectives:
 ## [Vincent Driessen model](http://nvie.com/posts/a-successful-git-branching-model/)
 
 
-<img src="{{ site.baseurl }}/img/nvie-model.png" style="height: 600px;"/>
+<img src="{{ site.baseurl }}/fig/nvie-model.png" style="height: 600px;"/>
 
 (c) Vincent Driessen, licensed under CC BY-SA.
 
@@ -49,7 +49,7 @@ objectives:
 
 ## Semantic branching model
 
-<img src="{{ site.baseurl }}/img/branching-model.svg" alt="Branching model" width="90%">
+<img src="{{ site.baseurl }}/fig/branching-model.svg" alt="Branching model" width="90%">
 
 - Based on [semantic versioning](http://semver.org).
 - [https://dev-cafe.github.io/branching-model/](https://dev-cafe.github.io/branching-model/)

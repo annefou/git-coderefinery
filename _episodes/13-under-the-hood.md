@@ -12,7 +12,7 @@ keypoints:
   - Branches are extremely lightweight.
 ---
 
-![Stranger]({{ site.baseurl }}/img/stranger.jpg
+![Stranger]({{ site.baseurl }}/fig/stranger.jpg
 "stranger"){:class="img-responsive" style="max-width:60%"}
 
 
@@ -56,7 +56,7 @@ the state of each file.
 
 Commits are referenced by a SHA-1 hash (a 40-character hexadecimal string).
 
-![A commit inside git]({{ site.baseurl }}/img/commit-and-tree.png "States of a git file. License CC BY 3.0"){:class="img-responsive"}
+![A commit inside git]({{ site.baseurl }}/fig/commit-and-tree.png "States of a git file. License CC BY 3.0"){:class="img-responsive"}
 (Image from the [Pro Git book](https://git-scm.com/book/), licensed under CC BY 3.0)
 
 Once you have several commits, each commit blob also links to the hash of the
@@ -64,7 +64,7 @@ previous commit. The commits form a [directed acyclic
 graph](http://eagain.net/articles/git-for-computer-scientists/) (do not worry
 if the term is not familiar).
 
-![A commit and it's parents]({{ site.baseurl }}/img/commits-and-parents.png "Commit and it's parents License CC BY 3.0"){:class="img-responsive"}
+![A commit and it's parents]({{ site.baseurl }}/fig/commits-and-parents.png "Commit and it's parents License CC BY 3.0"){:class="img-responsive"}
 (Image from the [Pro Git book](https://git-scm.com/book/), licensed under CC BY 3.0)
 
 All branches and tags in Git are pointers to commits.

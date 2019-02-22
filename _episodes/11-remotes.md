@@ -114,11 +114,11 @@ On this page choose a project name (screenshot).
 For the sake of this exercise **do not select**
 "Initialize this repository with a README" (what will happen if you do?).
 
-<img src="{{ site.baseurl }}/img/github/1.jpg" width="60%" style="border:2px solid #000000;">
+<img src="{{ site.baseurl }}/fig/1.jpg" width="60%" style="border:2px solid #000000;">
 
 Once you click the green "Create repository", you will see a page similar to:
 
-<img src="{{ site.baseurl }}/img/github/2.jpg" width="60%" style="border:2px solid #000000;">
+<img src="{{ site.baseurl }}/fig/2.jpg" width="60%" style="border:2px solid #000000;">
 
 What this means is that we have now an empty project with either an HTTPS or an
 SSH address: click on the HTTPS and SSH buttons to see what happens.
