@@ -3,7 +3,6 @@ layout: lesson
 root: .
 ---
 
-# Introduction to version control with Git
 
 This is the introductory lesson to version control using
 [Git](https://git-scm.com/). It is assumed to be the very first thing done in a
